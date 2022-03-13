@@ -11,24 +11,25 @@
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
 	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.no-icons.min.css" rel="stylesheet" />
 	<!-- Icons -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="assets/css/awesome.css" rel="stylesheet"/>
 	<!-- Fonts -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<link href="assets/css/fonts.css" rel="stylesheet"/>
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link href="assets/css/styles.css" rel="stylesheet"/>
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 
-<body>
+<body class="home">
+
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center">
 			<img class="img-circle" src="img/croppedheadshot.jpg" alt="">
 			<span class="title">Sarah Mantell</span>
-			<span class="tagline">Mathematician, Baker, Artist<br>
+			<span class="tagline">Baker, Artist, Mathematician (BAM!) <br>
 		</h1>
 	</div>
 
@@ -59,9 +60,8 @@
 		</div>	
 	</nav>
 </header>
-</body>
 
-<main id="main">
+<main id="recipes">
 
 	<div class="container">
 
@@ -100,14 +100,87 @@
 				</header>
 				<p>Here's a collection of my favorite recipes. I suspect that this list will continue to grow and as it does, I'll be reorganizing the website. Many of these recipes were inspired by a variety of sources. In these cases, I'll be sure to cite the original source. </p>
 				
-				<h3>Breads</h3>
+				<!-- Desserts -->
+				<h2 class="section-title"><span>Desserts</span></h2>
 				
-				<p>Who doesn't love a good loaf?</p>
+				<div class="thumbnails recentworks row">
 				
-				<h3>Desserts </h3>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="img/blank.jpg" alt="">
+							<span class="cover"><span class="more">See recipe &rarr;</span></span>
+						</span>
+						<span class="title">Lemon Bars</span>
+					</a>
+				</div>
 				
-				<h3> Healthy Eating </h3>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="img/blank.jpg" alt="">
+							<span class="cover"><span class="more">See recipe &rarr;</span></span>
+						</span>
+						<span class="title">Brownies</span>
+					</a>
+				</div>				
 
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="img/blank.jpg" alt="">
+							<span class="cover"><span class="more">See recipe &rarr;</span></span>
+						</span>
+						<span class="title">Chewy Sugar Cookies</span>
+					</a>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="img/blank.jpg" alt="">
+							<span class="cover"><span class="more">See recipe &rarr;</span></span>
+						</span>
+						<span class="title">Brown Butter Chocolate Chip Cookies</span>
+					</a>
+				</div>
+												
+				</div>
+				
+				<!-- Breads -->
+				
+				<h2 class="section-title"><span>Breads</span></h2>
+				
+				<div class="thumbnails recentworks row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="img/blank.jpg" alt="">
+							<span class="cover"><span class="more">See recipe &rarr;</span></span>
+						</span>
+						<span class="title">Everyday Sourdough</span>
+					</a>
+				</div>				
+				</div>
+				
+				<!-- Healthy Eating -->
+				
+				<h2 class="section-title"><span>Healthy Eating</span></h2>
+				
+				<div class="thumbnails recentworks row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="img/blank.jpg" alt="">
+							<span class="cover"><span class="more">See recipe &rarr;</span></span>
+						</span>
+						<span class="title">Protein Oatmeal Bake</span>
+					</a>
+				</div>				
+				</div>
+				
 			</article>
 			<!-- /Article -->
 			
@@ -131,3 +204,11 @@
 
 		</div> <!-- /row of widgets -->
 	</div>
+</footer>
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
