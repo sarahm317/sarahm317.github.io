@@ -33,13 +33,46 @@
 </script>
 
 <!-- Setting up single page site -->
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="style/css/style.css">
+<script type="text/javascript" src="assets/scripts/jquery.js"></script>
 
-
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
 </head>
-
 
 <body>
 
+<div id="header">
+	<li id="site_name">SarahMantell.page</li>
+	<li onclick="scrollto('about');">ABOUT</li>
+	<li onclick="scrollto('baking');">BAKING</li>
+	<li onclick="scrollto('art');">ART</li>
+	<li onclick="scrollto('math');">MATH</li>
+</div>
+
+<div id="about">
+	<h1>About</h1>
+</div>
+
+<div id="baking">
+	<h1>Baking</h1>
+</div>
+
+<div id="art">
+	<h1>Art</h1>
+</div>
+
+<div id="math">
+	<h1>Math</h1>
+</div>
+
 </body>
+
+</html>

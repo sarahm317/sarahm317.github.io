@@ -1,0 +1,83 @@
+@font-face {
+	font-family: body;
+	src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+	font-family: body;
+	src: url(../fonts/raleway/Raleway-Thin.ttf);
+	font-style: oblique;
+}
+
+@font-face {
+	font-family: body;
+	src: url(../fonts/raleway/Raleway-Bold.ttf);
+	font-style: bold;
+}
+
+@font-face {
+	font-family: titles;
+	src: url(../fonts/lemonmilk/LemonMilk.otf);
+}
+
+body
+{
+ margin:0px auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: body;
+ background-color:#F2E9E4;
+}
+#header
+{
+ width:100%;
+ margin:0px auto;
+ padding:0px;
+ text-align:center;
+ height:70px;
+ line-height:70px;
+ font-family: titles;
+ color:#22223B;
+}
+#header li
+{
+ display:inline-block;
+ margin-right:25px;
+ font-size:17px;
+ color:#22223B;
+ cursor:pointer;
+}
+
+#header #site_name
+{
+ text-align:left;
+ width:680px;
+ font-size:35px;
+ margin-left:20px;
+}
+
+#about, #baking, #art, #math
+{
+ margin-top:100px;
+ width:90%;
+ height:400px;
+ margin-left:5%;
+ padding:50px;
+ box-sizing:border-box;
+ background-color:#C9ADA7;
+ border-radius:10px;
+ color: #F2E9E4;
+}
+#home h1
+{
+	font-size:40px;
+}
+#home p
+{
+ font-size:20px;
+}
+#about p
+{
+ font-size:20px;
+}
