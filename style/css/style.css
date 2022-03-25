@@ -1,6 +1,11 @@
+/*********************************************************************
+                                TYPOGRAPHY
+**********************************************************************/
+
 @font-face {
-	font-family: body;
+	font-family: Raleway;
 	src: url(../fonts/raleway/Raleway-Regular.ttf);
+	font-style: normal;
 }
 
 @font-face {
@@ -10,23 +15,85 @@
 }
 
 @font-face {
-	font-family: body;
-	src: url(../fonts/raleway/Raleway-Bold.ttf);
-	font-style: bold;
-}
-
-@font-face {
-	font-family: titles;
+	font-family: LemonMilk;
 	src: url(../fonts/lemonmilk/LemonMilk.otf);
 }
 
+@font-face {
+	font-family: walkway;
+	src: url(../fonts/walkway.ttf);
+}
+
+@font-face {
+	font-family: caviarDreams;
+	src: url(../fonts/CaviarDreams.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+h3 {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+/*********************************************************************
+                                HEADER
+**********************************************************************/
+#head {
+	background: url(../graphics/background.jpg) top center;
+	background-size: cover;
+	color: #F2E9E4;
+	padding: 30px 0 35px 0;
+	
+}
+
+#head .title {
+	font-family: LemonMilk;
+	font-size: 49px;
+	font-size: 3.0625rem;
+}
+
+
+/*********************************************************************
+                                BODY
+**********************************************************************/
 body
 {
  margin:0px auto;
  padding:0px;
  text-align:center;
  width:100%;
- font-family: body;
+ font-family: caviarDreams;
  background-color:#F2E9E4;
 }
 #header
@@ -37,8 +104,6 @@ body
  text-align:center;
  height:70px;
  line-height:70px;
- font-family: titles;
- color:#22223B;
 }
 #header li
 {
