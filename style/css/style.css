@@ -70,41 +70,64 @@ h5 {
                                 HEADER
 **********************************************************************/
 #head {
-	background: url(../graphics/background.jpg) top center;
+	background: url(../graphics/background.jpg) center center;
 	background-size: cover;
 	color: #F2E9E4;
-	padding: 30px 0 35px 0;
+	padding: 90px 0;
 	
 }
 
 #head .title {
 	font-family: LemonMilk;
-	font-size: 49px;
-	font-size: 3.0625rem;
+	font-size: 60px;
 }
 
 
 #head .tagline {
 	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 30px;
+	font-family: walkway;
 	line-height: 1.2em;
-	color: #4A4E69;
+	color: #F2E9E4;
 	margin: 5px 0 0;
 }
 
 /*********************************************************************
                                 NAVIGATION BAR
 **********************************************************************/
-.navbar {
-	border-width: 1px 0;
-	-webkit-border-radius: 0;
-	width: 100%;
+.topnav {
+	background-color: #F2E9E4;
+	position: relative;
+	font-family: caviarDreams;
+	width=100%;
+	display: inline-block;
+}
+
+.topnav a {
+	float: left;
+	padding: 20px 30px;
+	text-decoration: none;
+	color: #4A4E69;
+	text-align: center;
+}
+
+/* Change link color upon hover */
+.topnav a:hover {
+	background-color: #C9ADA7;
+	color: #F2E9E4;
+}
+
+.topnav a.active {
+	background-color: #C9ADA7;
+	color: #F2E9E4;
 }
 
 /*********************************************************************
                                 BODY
 **********************************************************************/
+img {
+  max-width: 100%;
+}
 body
 {
  margin:0px auto;
