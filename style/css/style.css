@@ -9,12 +9,6 @@
 }
 
 @font-face {
-	font-family: body;
-	src: url(../fonts/raleway/Raleway-Thin.ttf);
-	font-style: oblique;
-}
-
-@font-face {
 	font-family: LemonMilk;
 	src: url(../fonts/lemonmilk/LemonMilk.otf);
 }
@@ -29,86 +23,82 @@
 	src: url(../fonts/CaviarDreams.ttf);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: Raleway;
-  font-weight: 400;
-}
+/*********************************************************************
+                                BODY
+**********************************************************************/
 
-h1 {
-  font-size: 40px;
-  font-size: 2.5rem;
-}
-h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
-}
-h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
-}
-h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
-}
-h5 {
-  font-size: 20px;
-  font-size: 1.25rem;
+html, body {
+	margin: 0;
+	font-family: Raleway, sans-serif;
+	background-color: #F2E9E4;
 }
 
 /*********************************************************************
-                                HEADER
+                                LANDING PAGE
 **********************************************************************/
-#head {
-	background: url(../graphics/background.jpg) center center;
+
+.landing {
+	/* Sizing */
+	width: 100vw;
+	height: 100vh;
+
+	/* Alignment */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	/* Background styles */
+	background-image: url("../graphics/background.jpg");
 	background-size: cover;
-	color: #F2E9E4;
-	padding: 90px 0;
-	
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#head .title {
+.landing h1 {
+	/* Text styles */
 	font-family: LemonMilk;
-	font-size: 60px;
+	font-size: 5em;
+	color:#22223B;
+
+	/* Margins */
+	margin-top: 0;
+	margin-bottom: 0.5em;
 }
 
-
-#head .tagline {
-	display: block;
-	font-size: 30px;
-	font-family: walkway;
-	line-height: 1.2em;
-	color: #F2E9E4;
-	margin: 5px 0 0;
+.landing h2 {
+	/* Text styles */
+	font-family: caviarDreams;
+	color: #4A4E69;
 }
-
 /*********************************************************************
                                 NAVIGATION BAR
 **********************************************************************/
+.topnav-wrapper {
+	padding: 20px 50px 20px 50px;
+}
 .topnav {
+	border: 1px solid #9A8C98;
+	border-width: 1px 0;
 	background-color: #F2E9E4;
 	position: relative;
 	font-family: caviarDreams;
-	width: 100%;
-	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .topnav a {
-	float: left;
-	padding: 20px 30px;
 	text-decoration: none;
 	color: #4A4E69;
 	text-align: center;
+	display: inline-block;
+	padding: 10px;
+}
+
+.topnav li {
+	display: inline;
 }
 
 /* Change link color upon hover */
@@ -132,69 +122,61 @@ h5 {
 	  padding: 5px 8px;
 	}
   }
-
 /*********************************************************************
-                                BODY
+                                MAIN
 **********************************************************************/
-img {
-  max-width: 100%;
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+	max-width: 80%;
+	flex-direction: row;
+	height: 80%;
 }
-body
-{
- margin:0px auto;
- padding:0px;
- text-align:center;
- width:100%;
- font-family: caviarDreams;
- background-color:#F2E9E4;
-}
-#header
-{
- width:100%;
- margin:0px auto;
- padding:0px;
- text-align:center;
- height:70px;
- line-height:70px;
-}
-#header li
-{
- display:inline-block;
- margin-right:25px;
- font-size:17px;
- color:#22223B;
- cursor:pointer;
+.profile-picture {
+	border-radius: 50%;
 }
 
-#header #site_name
-{
- text-align:left;
- width:680px;
- font-size:35px;
- margin-left:20px;
+.left, .right {
+	margin: 5px;
+	max-width: 50%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-#about, #baking, #art, #math
-{
- margin-top:100px;
- width:90%;
- height:400px;
- margin-left:5%;
- padding:50px;
- box-sizing:border-box;
- background-color:#C9ADA7;
- border-radius:10px;
- color: #F2E9E4;
+.left {
+	align-items: center;
+	justify-content: center;
 }
-#home h1
-{
-	font-size:40px;
+
+.main-links {
+	list-style: none;
+	padding-left: 0px;
+	font-size: 18px;
 }
-#home p
-{
- font-size:20px;
+
+.main-links li {
+	display: inline-block;
+	margin-right: 8px;
 }
-#about p
-{
- font-size:20px;
+
+.main-links a {
+	text-decoration: none;
+	padding: 4px;
+	color: #4A4E69;
+}
+
+.main-links a:hover {
+	background-color: #C9ADA7;
+	color: #F2E9E4;
+}
+
+.bio {
+	font-size: 18px;
 }
