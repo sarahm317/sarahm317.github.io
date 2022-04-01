@@ -1,27 +1,5 @@
-/*********************************************************************
-                                TYPOGRAPHY
-**********************************************************************/
-
-@font-face {
-	font-family: Raleway;
-	src: url(../fonts/raleway/Raleway-Regular.ttf);
-	font-style: normal;
-}
-
-@font-face {
-	font-family: LemonMilk;
-	src: url(../fonts/lemonmilk/LemonMilk.otf);
-}
-
-@font-face {
-	font-family: walkway;
-	src: url(../fonts/walkway.ttf);
-}
-
-@font-face {
-	font-family: caviarDreams;
-	src: url(../fonts/CaviarDreams.ttf);
-}
+/* Importing fonts */
+@import url(fonts.css);
 
 /*********************************************************************
                                 BODY
