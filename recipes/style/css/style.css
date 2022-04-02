@@ -1,3 +1,5 @@
+@import url("../../../style/css/fonts.css");
+
 /*********************************************************************
                                 BODY
 **********************************************************************/
@@ -40,57 +42,6 @@ html, body {
 	justify-content: center;
 }
 
-/*********************************************************************
-                                TYPOGRAPHY
-**********************************************************************/
-h1,
-h2,
-h3,
-h4,
-h5 {
-	margin: 0;
-	margin-bottom: 1.38rem;
-	font-weight: 400;
-	line-height: 1.3;
-	text-transform: uppercase;
-}
-
-h1 {
-	margin-top: 0;
-	font-size: 3.052rem;
-}
-
-h2 {
-font-size: 2.441rem;
-}
-
-h3 {
-font-size: 1.953rem;
-}
-
-h4 {
-font-size: 1.563rem;
-}
-
-h5 {
-font-size: 1.25rem;
-}
-
-a {
-	text-decoration: none;
-}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-.img {
-	width: 100%;
-	display: block;
-	object-fit: cover;
-}
-
 
 /*********************************************************************
                                 LANDING PAGE
@@ -113,23 +64,6 @@ ul {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-}
-
-.landing h1 {
-	/* Text styles */
-	font-family: LemonMilk;
-	font-size: 5em;
-	color:#22223B;
-
-	/* Margins */
-	margin-top: 0;
-	margin-bottom: 0.5em;
-}
-
-.landing h2 {
-	/* Text styles */
-	font-family: caviarDreams;
-	color: #4A4E69;
 }
 /*********************************************************************
                                 RECIPE TOC
