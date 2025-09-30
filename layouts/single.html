@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+
+<article class="container">
+
+	<header>
+	{{- with .Title -}}
+	<h1 class="page-title">
+		{{ . | htmlUnescape }}
+	</h1>
+	{{- end -}}
+	</header>
+
+	<div class="page-content">
+		<div class="content-container__left">
+			{{ .Content }}
+		</div>
+ 		
+	</div>
+   
+
+</article>
+
+
+{{ end }}

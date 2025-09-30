@@ -1,0 +1,67 @@
+@use "../utilities/initial-variables" as iv;
+
+body {
+	// make page fill the whole screen height
+	min-height: 100dvh;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	flex-grow: 1;
+}
+
+.page-title {
+	text-align: center;
+	padding-inline: 4 * iv.$spacing;
+	max-width: 7 * iv.$container-base;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-block: 3 * iv.$spacing;
+	box-sizing: border-box;
+	font-size: iv.$size-1;
+
+}
+
+.page-content {
+	padding-inline: 4 * iv.$spacing;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	max-width: 7 * iv.$container-base;
+	width: 100%;	
+	margin-inline: auto;
+}
+
+.content-container {
+	
+	max-width: iv.$story-ch-limit;
+	text-align: center;
+
+	&__left {
+		@extend .content-container;
+		text-align: left;
+
+		h1, 
+		h2, 
+		h3, 
+		h4, 
+		h5, 
+		h6 {
+			text-align: center;
+		}
+	}
+
+	&__center {
+		@extend .content-container;
+		text-align: center;
+	}
+	
+}

@@ -1,0 +1,77 @@
+@use "../utilities/initial-variables" as iv;
+@use "../utilities/css-variables.scss" as cv;
+
+$body-family: iv.$family-primary;
+$body-color: iv.$primary;
+$code-family: iv.$family-mono;
+
+
+
+html {
+	// set base-font size so that we can easily scale things
+	font-size: iv.$base-font-size;
+	-moz-osx-font-smoothing: grayscale;
+  	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	// typography
+	font-family: $body-family;
+	color: $body-color;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: $code-family;
+}
+
+// set up header sizing 
+h1 {
+	font-size: iv.$size-1;
+}
+
+h2 {
+	font-size: iv.$size-2;
+}
+
+h3 {
+	font-size: iv.$size-3;
+}
+
+h4 {
+	font-size: iv.$size-4;
+}
+
+h5 {
+	font-size: iv.$size-5;
+}
+
+h6 {
+	font-size: iv.$size-6;
+}
+
+// headers are serif
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: iv.$family-serif;
+}
+
+:visited {
+	color: inherit;
+}
+
+*,
+:after,
+:before,
+::backdrop {
+	box-sizing: border-box;
+	border: 0 solid;
+	margin: 0;
+	padding: 0
+}
