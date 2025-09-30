@@ -17,3 +17,6 @@ menu:
 build:
   buildStats:
     enable: true
+caches:
+  images:
+    dir: :cacheDir/images
