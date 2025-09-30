@@ -1,0 +1,11 @@
+hugoVersion:
+  extended: true
+  min: "0.112.0"
+
+mounts:
+  - source: "static"
+    target: "static"
+  - source: "assets"
+    target: "assets"
+  - source: "assets"
+    target: "static"

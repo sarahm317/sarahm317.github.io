@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" data-theme="light">
+<head>
+	
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{{ partial "styles.html"}}
+</head>
+	
+<body>
+	{{ partial "header.html" . }}
+	<main>
+		{{ block "main" . }} 	
+		{{ end }}
+	</main>
+
+	<footer>
+		<div class="footer-text">
+			<p>Sarah P. Mantell</p>
+		</div>
+	</footer>
+
+</body>
+
+{{ partial "katex.html"}}
+</html>

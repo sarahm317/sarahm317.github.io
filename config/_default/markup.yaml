@@ -1,0 +1,28 @@
+goldmark:
+  extensions:
+    passthrough:
+      delimiters:
+        block:
+        - - \[
+          - \]
+        - - $$
+          - $$
+        inline:
+        - - \(
+          - \)
+      enable: true
+    extras:
+      mark:
+        enable: true
+    strikethrough: false
+  renderer:
+    hardWraps: false
+    unsafe: true
+
+highlight:
+  codeFences: true
+  guessSyntax: false
+  lineNos: true
+#  style: base16-snazzy
+  style: rose-pine-dawn
+  tabWidth: 2

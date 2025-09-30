@@ -1,0 +1,35 @@
+@use "../utilities/initial-variables" as iv;
+
+$button-hover-color: rgb(112, 180, 194);
+
+.top-nav {
+	width: 90vw;
+	overflow: hidden;
+}
+
+.right-navbar-item {
+	text-transform: uppercase;
+	float: right;
+}
+
+.top-nav a {
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.top-nav a:hover {
+	background-color: $button-hover-color;
+}
+
+.right-navbar {
+	
+	display: flex;
+	flex-direction: row;
+	float: right;
+}
+
+.left-navbar a{
+	float: left;
+}
